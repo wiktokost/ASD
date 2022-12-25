@@ -1,7 +1,7 @@
 #include <iostream>
+#include <stdio.h>
 
 using namespace std;
-int array_size;
 
 int partition (int A[], int p, int r){
     int pivot = A[r];
@@ -30,7 +30,37 @@ void quicksort(int A[], int p, int r){
     }
 }
 
-void insertionSort(int A[]){
+void maxHeapify(int A[], int array_size, int i) {
+    int largest = i;
+    int l = 2 * i + 1;
+    int r = 2 * i + 2;
+        if (l < array_size && A[l] > A[largest])
+            largest = l;
+
+        if (r < array_size && A[r] > A[largest])
+            largest = r;
+
+        if (largest != i) {
+            swap(A[i], A[largest]);
+            maxHeapify(A, array_size, largest);
+        }
+}
+
+void buildMaxHeap(int A[], int array_size){
+    for (int i = array_size/2 - 1; i >= 0; i--) {
+        maxHeapify(A, array_size, i);
+    }
+}
+
+void heapSort(int A[], int array_size){
+    buildMaxHeap(A, array_size);
+    for (int i = array_size - 1; i >= 0; i--) {
+        swap(A[0], A[i]);
+        maxHeapify(A, i, 0);
+    }
+}
+
+void insertionSort(int A[], int array_size){
     int key;
     int j;
     for (int i = 1; i < array_size; i++) {
@@ -46,45 +76,38 @@ void insertionSort(int A[]){
 
 void randArray(int A[], int Asize){
     for (int i = 0; i < Asize; i++) {
-        A[i] = rand()%100;
-        cout<<A[i]<<" ";
+        A[i] = rand()%10000;
+        printf("%d ", A[i]);
     }
 }
 
 void printArray(int A[], int Asize){
     for (int i = 0; i < Asize; i++) {
-        cout<<A[i]<<" ";
+        printf("%d ", A[i]);
     }
     cout<<"\n";
 }
 
 void printArraySortedByAllSorting(int A[], int Asize){
     cout<<"Sorted arrays By All Sorting:\n";
-    cout<<"Insertion Sort: ";
-    insertionSort(A);
+    cout<<"HeapSort: ";
+    heapSort(A, Asize);
     printArray(A, Asize);
     cout<<"QS-Lomuto: ";
     quicksort(A, 0, Asize-1);
+    printArray(A, Asize);
+    cout<<"Insertion Sort: ";
+    insertionSort(A, Asize);
     printArray(A, Asize);
 }
 
 
 int main() {
     srand(time(NULL));
-    array_size = 6;
+    int array_size = 6;
     int A1[array_size];
     cout<<"RANDOM ARRAY:\n";
     randArray(A1, array_size);
     cout<<"\n";
     printArraySortedByAllSorting(A1, array_size);
-    int A2[] = {1, 2, 3, 4, 5, 6, 7, 14, 24, 55};
-    int sizeA2 = sizeof(A2) / sizeof(A2[0]);
-    cout<<"Sorted array:\n";
-    printArray(A2, sizeA2);
-    printArraySortedByAllSorting(A2, sizeA2);
-    int A3[] = {15, 12, 10, 8, 5, 4, 2, 1};
-    int sizeA3 = sizeof (A3) / sizeof(A3[0]);
-    cout<<"Reverse sorted array:\n";
-    printArray(A3, sizeA3);
-    printArraySortedByAllSorting(A3, sizeA3);
 }
