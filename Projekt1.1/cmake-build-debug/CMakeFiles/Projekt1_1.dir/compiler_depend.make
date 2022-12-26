@@ -141,7 +141,28 @@ CMakeFiles/Projekt1_1.dir/Projekt1.cpp.obj: ../Projekt1.cpp \
   C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/algorithmfwd.h \
   C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_heap.h \
   C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_tempbuf.h \
-  C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/uniform_int_dist.h
+  C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/uniform_int_dist.h \
+  C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/chrono \
+  C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ratio \
+  C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/limits \
+  C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ctime \
+  C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/parse_numbers.h \
+  C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iomanip \
+  C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/locale \
+  C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets_nonio.h \
+  C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/time_members.h \
+  C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
+  C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/codecvt.h \
+  C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets_nonio.tcc \
+  C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_conv.h \
+  C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/unique_ptr.h \
+  C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tuple \
+  C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/array \
+  C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/uses_allocator.h \
+  C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/invoke.h \
+  C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/quoted_string.h \
+  C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/sstream \
+  C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/sstream.tcc
 
 
 C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/localefwd.h:
@@ -220,11 +241,15 @@ C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/x86_64-w64-mingw32/include/c
 
 C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/x86_64-w64-mingw32/include/_mingw_off_t.h:
 
+C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/parse_numbers.h:
+
 C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/x86_64-w64-mingw32/include/_mingw_stat64.h:
 
 C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/x86_64-w64-mingw32/include/stddef.h:
 
 C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/x86_64-w64-mingw32/include/swprintf.inl:
+
+C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/sstream:
 
 C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/x86_64-w64-mingw32/include/sec_api/wchar_s.h:
 
@@ -247,6 +272,8 @@ C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/x86_64-w64-mingw32/include/l
 C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/algorithmfwd.h:
 
 C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception_defines.h:
+
+C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ctime:
 
 C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stddef.h:
 
@@ -271,6 +298,8 @@ C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/1
 C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/x86_64-w64-mingw32/include/stdint.h:
 
 C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_pair.h:
+
+C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iomanip:
 
 C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_iterator_base_types.h:
 
@@ -360,6 +389,8 @@ C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/1
 
 C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/range_access.h:
 
+C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/quoted_string.h:
+
 C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/initializer_list:
 
 C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/alloc_traits.h:
@@ -425,3 +456,35 @@ C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/1
 C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_tempbuf.h:
 
 C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/uniform_int_dist.h:
+
+C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/chrono:
+
+C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ratio:
+
+C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/limits:
+
+C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/locale:
+
+C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets_nonio.h:
+
+C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/time_members.h:
+
+C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h:
+
+C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/codecvt.h:
+
+C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets_nonio.tcc:
+
+C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_conv.h:
+
+C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/unique_ptr.h:
+
+C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tuple:
+
+C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/array:
+
+C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/uses_allocator.h:
+
+C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/invoke.h:
+
+C:/PJATK\ pliki/JETBRAINS/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/sstream.tcc:

@@ -1,8 +1,29 @@
 #include <iostream>
 #include <cstdio>
 #include <algorithm>
+#include <chrono>
+#include <iomanip>
 
 using namespace std;
+using namespace chrono;
+
+void randArray(int A[], int Asize){
+    for (int i = 0; i < Asize; i++) {
+        A[i] = rand()%10000;
+        printf("%d ", A[i]);
+    }
+}
+
+void reverseArray(int A[], int array_size){
+    reverse(A, A + array_size);
+}
+
+void printArray(int A[], int Asize){
+    for (int i = 0; i < Asize; i++) {
+        printf("%d ", A[i]);
+    }
+    cout<<"\n";
+}
 
 int partition (int A[], int p, int r){
     int pivot = A[r];
@@ -35,7 +56,7 @@ void maxHeapify(int A[], int array_size, int i) {
     int largest = i;
     int l = 2 * i + 1;
     int r = 2 * i + 2;
-        if (l < array_size && A[l] > A[largest])
+        if (l < array_size && A[l] > A[i])
             largest = l;
 
         if (r < array_size && A[r] > A[largest])
@@ -75,52 +96,56 @@ void insertionSort(int A[], int array_size){
     }
 }
 
-void randArray(int A[], int Asize){
-    for (int i = 0; i < Asize; i++) {
-        A[i] = rand()%10000;
-        printf("%d ", A[i]);
-    }
+void HeapsortWithDuration(int A[], int array_size){
+    auto start = high_resolution_clock::now();
+    heapSort(A,array_size);
+    auto stop = high_resolution_clock::now();
+    auto dura = duration<double>(stop-start);
+    printArray(A, array_size);
+    cout<<"HEAPSORT DURATION: "<<fixed<<setprecision(9)<<dura.count()<<" miliseconds\n";
 }
 
-void reverseArray(int A[], int array_size){
-    reverse(A, A + array_size);
+void QuicksortWithDuration(int A[], int array_size){
+    auto start = high_resolution_clock::now();
+    quicksort(A, 0 ,array_size-1);
+    auto stop = high_resolution_clock::now();
+    auto dura = duration<double>(stop-start);
+    printArray(A, array_size);
+    cout<<"QUICKSORT DURATION: "<<fixed<<setprecision(9)<<dura.count()<<" miliseconds\n";
 }
 
-void printArray(int A[], int Asize){
-    for (int i = 0; i < Asize; i++) {
-        printf("%d ", A[i]);
-    }
+void InsertionSortWithDuration(int A[], int array_size){
+    auto start = high_resolution_clock::now();
+    insertionSort(A, array_size);
+    auto stop = high_resolution_clock::now();
+    auto dura = duration<double>(stop-start);
+    printArray(A, array_size);
+    cout<<"INSERTION SORT DURATION: "<<fixed<<setprecision(9)<<dura.count()<<" miliseconds\n";
+}
+
+void printAllSortingWithDuration(int A[], int array_size){
+    cout << "HeapSort:\n";
+    HeapsortWithDuration(A, array_size);
+    cout << "QuickSort:\n";
+    QuicksortWithDuration(A, array_size);
+    cout << "Insertion Sort:\n";
+    InsertionSortWithDuration(A, array_size);
     cout<<"\n";
 }
-
-void printArraySortedByAllSorting(int A[], int Asize){
-    cout<<"Sorted arrays By All Sorting:\n";
-    cout<<"HeapSort: ";
-    heapSort(A, Asize);
-    printArray(A, Asize);
-    cout<<"QS-Lomuto: ";
-    quicksort(A, 0, Asize-1);
-    printArray(A, Asize);
-    cout<<"Insertion Sort: ";
-    insertionSort(A, Asize);
-    printArray(A, Asize);
-    cout<<"\n";
-}
-
 
 int main() {
     srand(time(NULL));
-    int array_size = 6;
+    int array_size = 10;
     int A1[array_size];
-    cout<<"RANDOM ARRAY:\n";
+    cout << "RANDOM ARRAY: ";
     randArray(A1, array_size);
-    cout<<"\n";
-    printArraySortedByAllSorting(A1, array_size);
-    cout<<"SORTED ARRAY:\n";
+    cout << "\n";
+    printAllSortingWithDuration(A1, array_size);
+    cout << "SORTED ARRAY: ";
     printArray(A1, array_size);
-    printArraySortedByAllSorting(A1, array_size);
-    cout<<"REVERSED ARRAY:\n";
+    printAllSortingWithDuration(A1, array_size);
+    cout << "REVERSED ARRAY: ";
     reverseArray(A1, array_size);
     printArray(A1, array_size);
-    printArraySortedByAllSorting(A1, array_size);
+    printAllSortingWithDuration(A1, array_size);
 }
