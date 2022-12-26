@@ -1,5 +1,6 @@
 #include <iostream>
-#include <stdio.h>
+#include <cstdio>
+#include <algorithm>
 
 using namespace std;
 
@@ -81,6 +82,10 @@ void randArray(int A[], int Asize){
     }
 }
 
+void reverseArray(int A[], int array_size){
+    reverse(A, A + array_size);
+}
+
 void printArray(int A[], int Asize){
     for (int i = 0; i < Asize; i++) {
         printf("%d ", A[i]);
@@ -99,6 +104,7 @@ void printArraySortedByAllSorting(int A[], int Asize){
     cout<<"Insertion Sort: ";
     insertionSort(A, Asize);
     printArray(A, Asize);
+    cout<<"\n";
 }
 
 
@@ -109,5 +115,12 @@ int main() {
     cout<<"RANDOM ARRAY:\n";
     randArray(A1, array_size);
     cout<<"\n";
+    printArraySortedByAllSorting(A1, array_size);
+    cout<<"SORTED ARRAY:\n";
+    printArray(A1, array_size);
+    printArraySortedByAllSorting(A1, array_size);
+    cout<<"REVERSED ARRAY:\n";
+    reverseArray(A1, array_size);
+    printArray(A1, array_size);
     printArraySortedByAllSorting(A1, array_size);
 }
