@@ -12,6 +12,7 @@ void randArray(int A[], int Asize){
         A[i] = rand()%10000;
         printf("%d ", A[i]);
     }
+    cout<<"\n";
 }
 
 void reverseArray(int A[], int array_size){
@@ -139,7 +140,6 @@ int main() {
     int A1[array_size];
     cout << "RANDOM ARRAY: ";
     randArray(A1, array_size);
-    cout << "\n";
     printAllSortingWithDuration(A1, array_size);
     cout << "SORTED ARRAY: ";
     printArray(A1, array_size);
