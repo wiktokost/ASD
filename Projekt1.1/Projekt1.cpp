@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cstdio>
 #include <algorithm>
 #include <chrono>
 #include <iomanip>
@@ -15,13 +14,6 @@ void randArray(int A[], int Asize){
 
 void reverseArray(int A[], int array_size){
     reverse(A, A + array_size);
-}
-
-void printArray(int A[], int Asize){
-    for (int i = 0; i < Asize; i++) {
-        printf("%d ", A[i]);
-    }
-    cout<<"\n";
 }
 
 int partition (int A[], int p, int r){
@@ -100,7 +92,7 @@ void heapsortWithDuration(int A[], int array_size){
     heapSort(A,array_size);
     auto stop = high_resolution_clock::now();
     auto dura = duration<double>(stop-start);
-    cout<<"HEAPSORT DURATION: "<<fixed<<setprecision(9)<<dura.count();
+    cout<<"HEAPSORT DURATION: "<<fixed<<setprecision(9)<<dura.count()<<"\n";
 }
 
 void quicksortWithDuration(int A[], int array_size){
@@ -108,7 +100,7 @@ void quicksortWithDuration(int A[], int array_size){
     quicksort(A, 0 ,array_size-1);
     auto stop = high_resolution_clock::now();
     auto dura = duration<double>(stop-start);
-    cout<<"QUICKSORT DURATION: "<<fixed<<setprecision(9)<<dura.count();
+    cout<<"QUICKSORT DURATION: "<<fixed<<setprecision(9)<<dura.count()<<"\n";
 }
 
 void insertionSortWithDuration(int A[], int array_size){
@@ -116,7 +108,7 @@ void insertionSortWithDuration(int A[], int array_size){
     insertionSort(A, array_size);
     auto stop = high_resolution_clock::now();
     auto dura = duration<double>(stop-start);
-    cout<<"INSERTION SORT DURATION: "<<fixed<<setprecision(9)<<dura.count();
+    cout<<"INSERTION SORT DURATION: "<<fixed<<setprecision(9)<<dura.count()<<"\n";
 }
 
 void heapsortCall(int A[], int array_size){
@@ -154,7 +146,6 @@ void insertionCall(int A[], int array_size){
     insertionSortWithDuration(A, array_size);
     cout <<"\n";
 }
-
 
 int main() {
     srand(time(NULL));
