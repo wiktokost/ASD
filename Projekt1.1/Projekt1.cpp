@@ -92,7 +92,7 @@ void heapsortWithDuration(int A[], int array_size){
     heapSort(A,array_size);
     auto stop = high_resolution_clock::now();
     auto dura = duration<double>(stop-start);
-    cout<<"HEAPSORT DURATION: "<<fixed<<setprecision(9)<<dura.count()<<"\n";
+    cout<<"HEAPSORT DURATION: "<<fixed<<setprecision(6)<<dura.count()<<"\n";
 }
 
 void quicksortWithDuration(int A[], int array_size){
@@ -100,7 +100,7 @@ void quicksortWithDuration(int A[], int array_size){
     quicksort(A, 0 ,array_size-1);
     auto stop = high_resolution_clock::now();
     auto dura = duration<double>(stop-start);
-    cout<<"QUICKSORT DURATION: "<<fixed<<setprecision(9)<<dura.count()<<"\n";
+    cout<<"QUICKSORT DURATION: "<<fixed<<setprecision(6)<<dura.count()<<"\n";
 }
 
 void insertionSortWithDuration(int A[], int array_size){
@@ -108,7 +108,7 @@ void insertionSortWithDuration(int A[], int array_size){
     insertionSort(A, array_size);
     auto stop = high_resolution_clock::now();
     auto dura = duration<double>(stop-start);
-    cout<<"INSERTION SORT DURATION: "<<fixed<<setprecision(9)<<dura.count()<<"\n";
+    cout<<"INSERTION SORT DURATION: "<<fixed<<setprecision(6)<<dura.count()<<"\n";
 }
 
 void heapsortCall(int A[], int array_size){
